@@ -8,3 +8,4 @@ public class Main {
         // System.out.println(d.name); // ❌ NullPointerException
     }
 }
+// see how there is no new creation? only REFERENCE
