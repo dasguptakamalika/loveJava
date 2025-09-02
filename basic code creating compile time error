@@ -1,0 +1,3 @@
+Dog d = "doggo";
+System.out.println(d);  
+// see how it create compile time error.
