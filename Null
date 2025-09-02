@@ -1,0 +1,10 @@
+class Dog {
+    String name;
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d = null;  // reference exists, but points to nothing
+        // System.out.println(d.name); // ❌ NullPointerException
+    }
+}
