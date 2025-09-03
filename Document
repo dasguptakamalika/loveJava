@@ -1,0 +1,25 @@
+System.out.println(d); where d == null → prints "null" (no dereference)
+System.out.println(d.name); when d == null → compiles, but throws NullPointerException at runtime (because it dereferences d)
+It’s a compile-time error only if name doesn’t exist/isn’t visible, or the types don’t match (e.g., Dog d = "doggo";)
+
+
+Assignment: RHS must be the same type, a subtype, or null.
+Cast is only allowed if types are related (one is a subtype/supertype of the other). Otherwise: inconvertible types.
+Dog d = new Object();
+Object o = new Dog();     // ✅ upcast: always allowed (Dog → Object)
+Error: incompatible types: Object cannot be converted to Dog
+
+Why: Object is a supertype of Dog. A Dog variable can’t hold a plain Object. (Opposite direction works: Object o = new Dog();)
+------------------------
+Cat c = new Cat();
+Dog d5 = (Dog) c;
+Error: inconvertible types: Cat cannot be converted to Dog
+Why: Cat and Dog are unrelated (neither extends the other). The compiler knows this cast can never succeed, so it forbids it.
+Object o = new Cat();
+Dog d = (Dog) o; // compiles (Object ↔ Dog are related), but will throw ClassCastException at runtime
+-----------------------
+Object o2 = new Object();
+Dog d3 = (Dog) o2;   // compiles, but throws ClassCastException at runtime
+Why it compiles: Object and Dog are related (Dog extends Object), so the downcast is allowed at compile time.
+
+Why it fails at runtime: the actual object inside o2 is a plain Object, not a Dog, so the cast fails.
