@@ -23,3 +23,14 @@ Dog d3 = (Dog) o2;   // compiles, but throws ClassCastException at runtime
 Why it compiles: Object and Dog are related (Dog extends Object), so the downcast is allowed at compile time.
 
 Why it fails at runtime: the actual object inside o2 is a plain Object, not a Dog, so the cast fails.
+------------------------
+
+Object o = new Dog();          // declared as Object
+if (o instanceof Dog) { Dog d = (Dog) o; }   // true → safe cast
+
+Animal o = new Dog();          // if Dog extends Animal
+if (o instanceof Dog) { Dog d = (Dog) o; }   // true
+
+Dog o = new Dog();
+if (o instanceof Dog) { /* always true */ }
+
