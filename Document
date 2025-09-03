@@ -28,7 +28,7 @@ Why it fails at runtime: the actual object inside o2 is a plain Object, not a Do
 Object o = new Dog();          // declared as Object
 if (o instanceof Dog) { Dog d = (Dog) o; }   // true → safe cast
 
-Animal o = new Dog();          // if Dog extends Animal
+Animal o = new Dog();          // if Dog extends Animal   //DOWNCASTING
 if (o instanceof Dog) { Dog d = (Dog) o; }   // true
 
 Dog o = new Dog();
