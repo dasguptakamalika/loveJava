@@ -17,3 +17,6 @@ public static void main(String[] args)
     System.out.println(d.name);
 }
 } output : compile error
+//The Dot Operator (.) = Dereference, Dereferencing is the process of accessing the actual object or value that a reference (or pointer) points to.
+Printing a null reference: Works fine, outputs "null"
+Accessing members of a null reference: Compiles (if the member exists) but throws NullPointerException at runtime
