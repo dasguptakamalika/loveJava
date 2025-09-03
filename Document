@@ -18,7 +18,7 @@ Why: Cat and Dog are unrelated (neither extends the other). The compiler knows t
 Object o = new Cat();
 Dog d = (Dog) o; // compiles (Object ↔ Dog are related), but will throw ClassCastException at runtime
 -----------------------
-Object o2 = new Object();
+Object o2 = new Object(); //OK AT compile WRONG at RUNTIME
 Dog d3 = (Dog) o2;   // compiles, but throws ClassCastException at runtime
 Why it compiles: Object and Dog are related (Dog extends Object), so the downcast is allowed at compile time.
 
