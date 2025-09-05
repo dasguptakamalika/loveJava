@@ -1,0 +1,11 @@
+class Money {
+    final int cents;
+    Money(int cents) { this.cents = cents; }
+
+    Money add(Money other) {              // does not mutate this
+        return new Money(this.cents + other.cents);
+    }
+}
+
+Money a = new Money(150);
+Money b = a.add(new Money(50)); // a=150, b=200 (separate objects)
