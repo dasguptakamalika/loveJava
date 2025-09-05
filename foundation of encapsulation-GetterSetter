@@ -1,0 +1,18 @@
+class Student {
+    private String name;  // private field
+
+    public String getName() {   // getter
+        return name;
+    }
+    public void setName(String name) {   // setter
+        this.name = name;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.setName("Kamalika");          // using setter
+        System.out.println(s.getName()); // using getter → Kamalika
+    }
+}
