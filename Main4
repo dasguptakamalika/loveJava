@@ -1,0 +1,24 @@
+class Address {
+    String city;
+    Address(String city) { this.city = city; }
+}
+
+class Person {
+    String name;
+    Address address;              // reference to another object
+
+    Person(String name, Address addr) {
+        this.name = name;
+        this.address = addr;      // shares the same Address object (aliasing)
+    }
+}
+
+public class Demo {
+    public static void main(String[] args) {
+        Address a = new Address("Boston");
+        Person p = new Person("Kamalika", a);
+
+        a.city = "NYC";           // modifies shared object
+        System.out.println(p.address.city); // NYC (same object!)
+    }
+}
