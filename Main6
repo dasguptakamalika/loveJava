@@ -1,0 +1,15 @@
+class Address {
+    String city;
+    Address(String city) { this.city = city; }
+    Address(Address other) { this.city = other.city; } // copy ctor
+}
+
+class Person {
+    String name;
+    Address address;
+
+    Person(String name, Address addr) {
+        this.name = name;
+        this.address = new Address(addr); // defensive copy
+    }
+}
