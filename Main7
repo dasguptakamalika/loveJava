@@ -1,0 +1,11 @@
+class Person {
+    String name, city;
+    private Person(String name, String city) { this.name = name; this.city = city; }
+
+    // static factory method
+    static Person fromNameAndCity(String name, String city) {
+        return new Person(name, city);
+    }
+}
+
+Person p = Person.fromNameAndCity("Kamalika", "Seattle");
