@@ -1,0 +1,23 @@
+class Dog {
+    String name;
+    int age;
+
+    Dog() {                    // default
+        this("Puppy", 0);
+    }
+    Dog(String name) {         // overloaded
+        this(name, 1);
+    }
+    Dog(String name, int age) { // main ctor
+        this.name = name;
+        this.age = age;
+    }
+}
+
+Sure 👍 here’s the short version:
+
+* `new Dog("Buddy")` → matches the **1-arg constructor**.
+* First line inside it is `this(name, 1)` → jumps to the **2-arg constructor**.
+* **2-arg constructor runs fully**, sets `name="Buddy"`, `age=1`.
+* When it finishes, control returns to the **1-arg constructor**, which then runs its remaining code.
+* Final object: `Dog{name="Buddy", age=1}`. ✅
