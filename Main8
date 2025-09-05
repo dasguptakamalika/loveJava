@@ -1,0 +1,8 @@
+class Counter {
+    private int value;
+    Counter increment() { value++; return this; }
+    Counter add(int x)  { value += x; return this; }
+    int get() { return value; }
+}
+
+int v = new Counter().increment().add(3).increment().get(); // 5
