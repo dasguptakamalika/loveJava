@@ -2,3 +2,18 @@ Box a = new Box(7);   // create a Box object, a → that object
 Box b = a;            // b now refers to the SAME object as a
 b.value = 200;        // change the field via b
 System.out.println(a.value); // prints 200, because a and b share the object
+class Box {
+    int value;
+    Box(int v) { value = v; }
+}
+
+public class AliasExample {
+    public static void main(String[] args) {
+        Box a = new Box(7);  // a → Box with value = 7
+        Box b = a;           // b points to the SAME object
+        b.value = 200;       // change via b
+
+        System.out.println(a.value); // 200
+        System.out.println(b.value); // 200
+    }
+}
