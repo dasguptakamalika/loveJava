@@ -1,0 +1,25 @@
+java
+class Box {
+    int value;
+    Box(int v){ value = v; }
+}
+
+class Player {
+    String name;
+    Box box;                 // reference to another object
+
+    Player(String name, Box box) {
+        this.name = name;    // set my name
+        this.box = box;      // store the SAME Box reference (sharing)
+    }
+}
+
+public class S9 {
+    public static void main(String[] args) {
+        Box shared = new Box(10);
+        Player p = new Player("Kamalika", shared);
+
+        shared.value = 99;                 // change the shared object
+        System.out.println(p.box.value);   // 99 (same object)
+    }
+}
