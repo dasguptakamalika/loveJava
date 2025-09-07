@@ -1,0 +1,11 @@
+class Box {
+    private final int value;   // cannot change later
+
+    Box(int v) {               // only set once, at creation
+        value = v;
+    }
+
+    int getValue() {           // getter, read-only
+        return value;
+    }
+}
