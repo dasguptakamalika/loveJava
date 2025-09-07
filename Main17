@@ -1,0 +1,16 @@
+A **constructor** runs **automatically** right after new. It sets the object up.
+java
+class Box {
+    int value;
+
+    Box() {            // constructor (same name as class, no return type)
+        value = 0;     // default setup
+    }
+}
+
+public class S4 {
+    public static void main(String[] args) {
+        Box b = new Box();            // runs Box()
+        System.out.println(b.value);  // 0
+    }
+}
