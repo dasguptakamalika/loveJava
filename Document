@@ -49,5 +49,6 @@ Setter = controlled updates after creation.
 Direct assignment = simple, but unsafe.
 
 ..........................
+Without "this", if names are the same, Java would always pick the local variable/parameter.
 
 
