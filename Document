@@ -42,6 +42,12 @@ Use a constructor for required values that should exist from the very start.
 | **Setter method**           | After object creation | `b.setValue(42);`      | ✅ Can add checks/logic (e.g., block negatives)      |
 | **Constructor**             | At object creation    | `Box b = new Box(42);` | ✅ Ensures object starts valid, no half-empty object |
 
+Constructor = guarantee initial valid state.
+
+Setter = controlled updates after creation.
+
+Direct assignment = simple, but unsafe.
+
 ..........................
 
 
