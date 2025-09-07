@@ -1,0 +1,11 @@
+java
+class Box { int value; Box(int v){ value = v; } }
+
+public class S8 {
+    public static void main(String[] args) {
+        Box a = new Box(7);
+        Box b = a;                // both point to the SAME Box
+        b.value = 200;
+        System.out.println(a.value); // 200 (same object!)
+    }
+}
