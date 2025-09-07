@@ -1,0 +1,13 @@
+java
+class Box {
+    int value;                  // a field (data) inside the object
+}
+
+public class S2 {
+    public static void main(String[] args) {
+        Box b = new Box();      // make a Box object
+        b.value = 10;           // set its field
+        System.out.println(b.value); // 10
+    }
+}
+* new Box() creates an object. * b is a **reference** pointing to that object. * b.value reaches inside it. ---
