@@ -33,4 +33,15 @@ if (o instanceof Dog) { Dog d = (Dog) o; }   // true
 
 Dog o = new Dog();
 if (o instanceof Dog) { /* always true */ }
+Use setters if the value can change during the object’s life.
+
+Use a constructor for required values that should exist from the very start.
+| Way                         | When used             | Example code           | Control / Safety                                    |
+| --------------------------- | --------------------- | ---------------------- | --------------------------------------------------- |
+| **Direct field assignment** | Anytime               | `b.value = 42;`        | ❌ No control (any value can be set, even invalid)   |
+| **Setter method**           | After object creation | `b.setValue(42);`      | ✅ Can add checks/logic (e.g., block negatives)      |
+| **Constructor**             | At object creation    | `Box b = new Box(42);` | ✅ Ensures object starts valid, no half-empty object |
+
+..........................
+
 
