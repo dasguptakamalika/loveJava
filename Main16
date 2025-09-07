@@ -1,0 +1,16 @@
+java
+class Box {
+    int value;
+
+    void setValue(int v) {      // a normal method
+        value = v;              // put v into the field
+    }
+}
+
+public class S3 {
+    public static void main(String[] args) {
+        Box b = new Box();
+        b.setValue(42);
+        System.out.println(b.value); // 42
+    }
+}
