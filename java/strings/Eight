@@ -1,0 +1,9 @@
+public class MaxAvg {
+  public static void main(String[] args) {
+    int[] a = {2,7,1,9,4};
+    int max = a[0], sum=0;
+    for(int x: a){ max=Math.max(max,x); sum+=x; }
+    double avg = sum*1.0/a.length;
+    System.out.println(max + " " + avg); // 9 4.6
+  }
+}
