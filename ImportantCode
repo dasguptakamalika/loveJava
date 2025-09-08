@@ -1,0 +1,32 @@
+In this Java code, we're seeing how object references work with shared memory. 
+When Box shared = new Box(10) executes, it creates a single Box object in memory with value 10. 
+Then when the Player constructor runs with this.box = box, it's not creating a new Box object - instead,
+it's copying the reference (memory address) that points to that same Box object. So now we have three variables: 
+shared, box (the parameter), and p.box that all contain the exact same memory address pointing to the one and only
+Box object that was created. This is why when we later change shared.value = 99, we're modifying the value inside that 
+single Box object in memory, and when we access it through p.box.value, we see the updated value of 99. 
+All three variables are essentially different names for the same object - like having multiple remote controls that all operate the same TV.
+
+class Box {
+    int value;
+Box(int v)
+{ 
+value = v; 
+}
+}
+class Player {
+    String name;
+    Box box;                 // reference to another object
+    Player(String name, Box box) {
+        this.name = name;    // set my name
+        this.box = box;      // store the SAME Box reference (sharing)
+    }
+}
+public class S9 {
+    public static void main(String[] args) {
+        Box shared = new Box(10);
+        Player p = new Player("Kamalika", shared);
+        shared.value = 99;                 // change the shared object
+        System.out.println(p.box.value);   // 99 (same object)
+    }
+}
