@@ -1,0 +1,18 @@
+import java.util.*;
+public class LongestUnique {
+  public static int lengthOfLongestSubstring(String s){
+    int ans=0, left=0;
+    int[] last = new int[256];
+    Arrays.fill(last, -1);
+    for(int right=0; right<s.length(); right++){
+      char c = s.charAt(right);
+      if(last[c] >= left) left = last[c] + 1;
+      last[c] = right;
+      ans = Math.max(ans, right-left+1);
+    }
+    return ans;
+  }
+  public static void main(String[] args){
+    System.out.println(lengthOfLongestSubstring("abcabcbb")); // 3 ("abc")
+  }
+}
