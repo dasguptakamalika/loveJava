@@ -6,7 +6,7 @@ Box(int v)
 { 
 value = v; 
 }
-}
+} 
  
 
 class Player {
