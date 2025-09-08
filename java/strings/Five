@@ -1,0 +1,14 @@
+import java.util.Arrays;
+public class Anagram {
+  public static boolean isAnagram(String a, String b){
+    if(a.length()!=b.length()) return false;
+    int[] f = new int[256];
+    for(char c: a.toCharArray()) f[c]++;
+    for(char c: b.toCharArray()) if(--f[c]<0) return false;
+    return true;
+  }
+  public static void main(String[] args){
+    System.out.println(isAnagram("listen","silent")); // true
+    System.out.println(isAnagram("rat","car"));       // false
+  }
+}
