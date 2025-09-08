@@ -1,0 +1,11 @@
+public class Builders {
+  public static void main(String[] args) {
+    StringBuilder sb = new StringBuilder(); // not thread-safe, fastest in single-thread
+    for (int i=1;i<=5;i++) sb.append(i).append("-");
+    System.out.println(sb.toString()); // 1-2-3-4-5-
+
+    StringBuffer sf = new StringBuffer(); // thread-safe (synchronized)
+    for (int i=1;i<=3;i++) sf.append("X");
+    System.out.println(sf.toString()); // XXX
+  }
+}
