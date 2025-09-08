@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Object Aliasing</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+        .memory-diagram {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .variable-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .variable-box {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            min-width: 140px;
+            box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3);
+            font-size: 16px;
+        }
+        .object-box {
+            background: #e74c3c;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(231, 76, 60, 0.3);
+            border: 4px dashed #27ae60;
+            animation: pulse 2s infinite;
+            font-size: 18px;
+        }
+        @keyframes pulse {
+            0% { border-color: #27ae60; }
+            50% { border-color: #2ecc71; }
+            100% { border-color: #27ae60; }
+        }
+        .arrow {
+            font-size: 36px;
+            color: #27ae60;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .memory-address {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 5px;
+        }
+        .code-section {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .highlight {
+            background: #f1c40f;
+            color: #2c3e50;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .explanation {
+            background: #ecf0f1;
+            padding: 25px;
+            border-left: 6px solid #3498db;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .key-insight {
+            background: #27ae60;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .memory-diagram {
+                flex-direction: column;
+            }
+            .variable-section {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Why Does `a.value` Print 200?</h1>
+        
+        <div class="memory-diagram">
+            <div class="variable-section">
+                <div class="variable-box">
+                    <strong>Variable: a</strong><br>
+                    Reference: @1A2B3C
+                    <div class="memory-address">points to Box object</div>
+                </div>
+                <div class="variable-box">
+                    <strong>Variable: b</strong><br>
+                    Reference: @1A2B3C
+                    <div class="memory-address">points to SAME object</div>
+                </div>
+            </div>
+            
+            <div class="arrow">→</div>
+            
+            <div class="object-box">
+                <strong>ONE Box Object</strong><br>
+                <strong>@1A2B3C</strong><br>
+                <strong>value: 200</strong><br>
+                <div class="memory-address">Same object in memory</div>
+            </div>
+        </div>
+
+        <div class="code-section">
+Box a = new Box(7);     <span class="highlight">// a points to Box object</span><br>
+Box b = a;              <span class="highlight">// b gets SAME reference as a</span><br>
+b.value = 200;          <span class="highlight">// changes the ONE object</span><br>
+System.out.println(a.value); <span class="highlight">// 200 (same object!)</span><br>
+System.out.println(b.value); <span class="highlight">// 200 (same object!)</span>
+        </div>
+
+        <div class="explanation">
+            <strong>Why `a.value` prints 200:</strong><br><br>
+            1. <strong>`Box b = a`</strong> copies the reference from `a` to `b` - it doesn't create a new Box object<br>
+            2. <strong>Both `a` and `b`</strong> contain the same memory address (@1A2B3C)<br>
+            3. <strong>There is only ONE Box object</strong> in memory, but two variables pointing to it<br>
+            4. <strong>`b.value = 200`</strong> changes the value field of that one object<br>
+            5. <strong>`a.value`</strong> accesses the same object, so it sees the changed value: 200
+        </div>
+
+        <div class="key-insight">
+            🔑 KEY INSIGHT: `a` and `b` are ALIASES - different names for the same object!
+        </div>
+    </div>
+</body>
+</html>
