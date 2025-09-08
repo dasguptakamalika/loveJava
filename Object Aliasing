@@ -6,7 +6,7 @@ class Box {
     int value;
     Box(int v) { value = v; }
 }
-
+ 
 public class AliasExample {
     public static void main(String[] args) {
         Box a = new Box(7);  // a → Box with value = 7
@@ -19,3 +19,7 @@ public class AliasExample {
 }
    check alias diag
 // KEY INSIGHT: `a` and `b` are ALIASES - different names for the same object!
+Reference Assignment: b = a copies the memory address, not the object
+Shared Memory: Both variables point to the same location in memory
+Aliasing Effect: Changes through one variable are visible through the other
+One Object: There's still only ONE Box object in memory, just multiple ways to access it
