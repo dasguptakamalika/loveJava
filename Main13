@@ -6,5 +6,5 @@ class Holder {
 
 Box b = new Box("A");
 Holder h = new Holder(b);
-b.v = "B";
-System.out.println(h.box.v); // ?
+b.v = "B"; 
+System.out.println(h.box.v); // ? //very imp
