@@ -5,7 +5,7 @@ public class S7 {
         Box a = new Box(5);
         Box b = new Box(5);
         b.value = 100;
-        System.out.println(a.value); // 5   (different objects)
+        System.out.println(a.value); // 5   (different objects) okay!
         System.out.println(b.value); // 100
     }
 }
