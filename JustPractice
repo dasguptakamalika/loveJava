@@ -18,3 +18,4 @@ b.value = 100;
 System.out.println(a.value); // 5 (different objects) System.out.println(b.value); // 100
  }
  }
+//basic but good
