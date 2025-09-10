@@ -14,4 +14,5 @@ public class Main2 {
 }
 /*Dog d2 = d1; makes both variables point to the same object.
 So changing d2.name changes the same Dog that d1 references →
-both print “Whiskers”.*/
+
+both print “Whiskers”.*/ 
