@@ -5,7 +5,7 @@ class Box {
         value = v;
     }
 
-    int getValue() {           // getter, read-only
+    int getValue() {           // getter, read-only setter have no return 
         return value;
     }
 }
