@@ -5,7 +5,7 @@ class Item { String name; Item(String n){ name=n; } }
 class Order {
     private final List<Item> items;
     Order(List<Item> items) {
-        // defensive copy to prevent external mutation 
+        // defensive copy to prevent external mutation  
         this.items = new ArrayList<>(items);
     }
     List<Item> items() { return new ArrayList<>(items); } // return copy, not internal list ,the parenthesis
