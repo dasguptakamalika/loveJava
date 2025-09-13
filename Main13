@@ -1,4 +1,4 @@
-class Box { String v; Box(String v){ this.v=v; } }
+ class Box { String v; Box(String v){ this.v=v; } }
 class Holder {
     Box box;
     Holder(Box b){ this.box = b; } // aliasing
