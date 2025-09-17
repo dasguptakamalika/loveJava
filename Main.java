@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args)
     {
         Dog d = new Dog();
-        d.name = "Whiskey";
+        d.name = "Whiskey"; 
         System.out.println(d.name + " : " + "The goodest Girl");
     }
 }
