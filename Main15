@@ -1,4 +1,4 @@
-java
+ java
 class Box {
     int value;                  // a field (data) inside the object
 }
