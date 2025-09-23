@@ -6,7 +6,7 @@ class Box {
 public class S2 {
     public static void main(String[] args) {
         Box b = new Box();      // make a Box object
-        b.value = 10;           // set its field
+        b.value = 10;           // set its field 
         System.out.println(b.value); // 10
     }
 }
