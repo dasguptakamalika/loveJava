@@ -3,6 +3,6 @@ class Box {
     int value;
     Box(int value) {
         this.value = value; // “put the parameter (right side) into my field (left)”
-    }
+    } 
 }
 this.value = the field on **this object**. value (without this) = the **parameter**.
