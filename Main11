@@ -5,6 +5,6 @@ class User {
             throw new IllegalArgumentException("Invalid email");
         this.email = email;
     }
-}
+} 
  
 easy this application
