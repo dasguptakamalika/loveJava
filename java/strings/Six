@@ -6,7 +6,7 @@ public class LongestUnique {
     Arrays.fill(last, -1);
     for(int right=0; right<s.length(); right++){
       char c = s.charAt(right);
-      if(last[c] >= left) left = last[c] + 1;
+      if(last[c] >= left) left = last[c] + 1; 
       last[c] = right;
       ans = Math.max(ans, right-left+1);
     }
