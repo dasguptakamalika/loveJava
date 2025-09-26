@@ -4,7 +4,7 @@ public class PalClean {
     while(i<j){
       char a = s.charAt(i), b = s.charAt(j);
       if(!Character.isLetterOrDigit(a)){ i++; continue; }
-      if(!Character.isLetterOrDigit(b)){ j--; continue; }
+      if(!Character.isLetterOrDigit(b)){ j--; continue; } 
       if(Character.toLowerCase(a)!=Character.toLowerCase(b)) return false;
       i++; j--;
     }
