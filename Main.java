@@ -5,7 +5,7 @@ public class Main {
     {
         Dog d = new Dog();
         d.name = "Whiskey"; 
-        System.out.println(d.name + " : " + "The goodest Girl");
+        System.out.println(d.name + " : " + "The goodest Girl"); 
     }
 }
 //new Dog() = object in memory 
