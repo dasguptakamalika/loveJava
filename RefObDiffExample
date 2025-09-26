@@ -8,7 +8,7 @@ value = v;
 }
 } 
  
-
+ 
 class Player {
     String name;
     Box box;                 // reference to another object
