@@ -5,7 +5,7 @@ class Profile implements Cloneable {
     Profile(Profile other) { this.handle = other.handle; }
 
     // static factory
-    static Profile copyOf(Profile p) {
+    static Profile copyOf(Profile p) { 
         return new Profile(p);
     }
 
