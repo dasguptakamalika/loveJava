@@ -9,7 +9,7 @@ public class SeparateExample {
         Box b = new Box(7);   // b → DIFFERENT Box with value = 7
         b.value = 200;        // change only b's object
 
-        System.out.println(a.value); // 7
+        System.out.println(a.value); // 7 
         System.out.println(b.value); // 200
     }
 }
