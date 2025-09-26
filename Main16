@@ -6,7 +6,7 @@ class Box {
         value = v;              // put v into the field
     }
 }
-
+ 
 public class S3 {
     public static void main(String[] args) { 
         Box b = new Box();
