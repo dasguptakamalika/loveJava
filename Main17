@@ -5,7 +5,7 @@ class Box {
 
     Box() {            // constructor (same name as class, no return type)
         value = 0;     // default setup
-    }
+    } 
 }
 
 public class S4 {
