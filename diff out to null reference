@@ -6,7 +6,7 @@ public static void main(String[] args)
     Dog d =null;
     System.out.println(d);
 } 
-} output : null
+} output : null 
 -------------------
 package org.example;
 
