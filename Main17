@@ -4,7 +4,7 @@ class Box {
     int value;
 
     Box() {            // constructor (same name as class, no return type)
-        value = 0;     // default setup
+        value = 0;     // default setup 
     } 
 }
 
