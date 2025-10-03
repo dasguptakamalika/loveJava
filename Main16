@@ -5,7 +5,7 @@ class Box {
     void setValue(int v) {      // a normal method
         value = v;              // put v into the field
     }
-}
+} 
  
 public class S3 {
     public static void main(String[] args) { 
