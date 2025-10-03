@@ -1,6 +1,6 @@
 class User {
     final String email;
-    User(String email) {
+    User(String email) { 
         if (email == null || !email.contains("@"))
             throw new IllegalArgumentException("Invalid email");
         this.email = email;
