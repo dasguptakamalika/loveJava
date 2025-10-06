@@ -3,7 +3,7 @@ class Box {
     Box(int v) { value = v; }
 }
 
-public class SeparateExample {
+public class SeparateExample { 
     public static void main(String[] args) { 
         Box a = new Box(7);   // a → Box with value = 7 
         Box b = new Box(7);   // b → DIFFERENT Box with value = 7
