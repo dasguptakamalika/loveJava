@@ -5,7 +5,7 @@ class Student {
         return name;
     }
     public void setName(String name) {   // setter
-        this.name = name;
+        this.name = name; 
     }
 }  
 
