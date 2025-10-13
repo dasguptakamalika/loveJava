@@ -3,7 +3,7 @@ class Profile implements Cloneable {
 
     // copy constructor
     Profile(Profile other) { this.handle = other.handle; } 
-
+ 
     // static factory
     static Profile copyOf(Profile p) { 
         return new Profile(p);
