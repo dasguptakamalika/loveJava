@@ -6,5 +6,5 @@ class User {
         this.email = email;
     }
 } 
- 
+  
 easy this application
