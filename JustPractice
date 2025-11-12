@@ -1,7 +1,7 @@
 
 class Box { 
 int value;
- Box(int v)
+ Box(int v) 
 { value = v; 
 }
 
