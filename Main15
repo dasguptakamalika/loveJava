@@ -1,7 +1,7 @@
   java
 class Box {
     int value;                  // a field (data) inside the object
-}
+} 
 
 public class S2 {
     public static void main(String[] args) {
