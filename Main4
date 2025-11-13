@@ -2,7 +2,7 @@ class Address {
     String city;
     Address(String city) { this.city = city; }
 }
-
+ 
 class Person {
     String name;
     Address address;              // reference to another object
