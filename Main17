@@ -6,7 +6,7 @@ class Box {
     Box() {            // constructor (same name as class, no return type)
         value = 0;     // default setup 
     } 
-}
+} 
 
 public class S4 {
     public static void main(String[] args) {
