@@ -4,7 +4,7 @@ public class Vowels {
     int count = 0;
     String vowels = "aeiouAEIOU";
     
-    // Traditional for loop instead of enhanced for loop
+    // Traditional for loop instead of enhanced for loop 
     for (int i = 0; i < s.length(); i++) {
       char c = s.charAt(i);
       if (vowels.indexOf(c) >= 0) { 
