@@ -13,4 +13,4 @@ public class S4 {
         Box b = new Box();            // runs Box() 
         System.out.println(b.value);  // 0
     }
-}
+} 
