@@ -10,7 +10,7 @@ public class Main3 {
         System.out.println(s1==s2);
         System.out.println(s3.equals(s4));
 
-        System.out.println("s1 hash: " + System.identityHashCode(s1));
+        System.out.println("s1 hash: " + System.identityHashCode(s1)); 
         System.out.println("s2 hash: " + System.identityHashCode(s2));
         System.out.println("s3 hash: " + System.identityHashCode(s3));
         System.out.println("s4 hash: " + System.identityHashCode(s4));
@@ -24,5 +24,6 @@ public class Main3 {
     }
 
 }
+
 
 
