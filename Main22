@@ -7,7 +7,7 @@ class Box {
 class Player {
     String name;
     Box box;                 // reference to another object
-
+ 
     Player(String name, Box box) {
         this.name = name;    // set my name
         this.box = box;      // store the SAME Box reference (sharing)
