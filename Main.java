@@ -7,7 +7,7 @@ public class Main {
         d.name = "Whiskey"; 
         System.out.println(d.name + " : " + "The goodest Girl");  
     } 
-}
+} 
 //new Dog() = object in memory 
   
 //d = reference pointing to that object
