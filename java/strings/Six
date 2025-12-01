@@ -11,7 +11,7 @@ public class LongestUnique {
       ans = Math.max(ans, right-left+1);
     }
     return ans;
-  }
+  } 
   public static void main(String[] args){
     System.out.println(lengthOfLongestSubstring("abcabcbb")); // 3 ("abc")
   }
