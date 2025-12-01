@@ -9,3 +9,4 @@ public class S8 {
         System.out.println(a.value); // 200 (same object!)
     }
 }
+ 
