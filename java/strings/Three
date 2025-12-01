@@ -5,3 +5,4 @@ public class NormalizeSpaces {
     System.out.println(t); // I love Java
   }
 }
+ 
