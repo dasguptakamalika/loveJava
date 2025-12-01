@@ -13,7 +13,7 @@ Why: Object is a supertype of Dog. A Dog variable can’t hold a plain Object. (
 ------------------------
 Cat c = new Cat();
 Dog d5 = (Dog) c;
-Error: inconvertible types: Cat cannot be converted to Dog
+Error: inconvertible types: Cat cannot be converted to Dog 
 Why: Cat and Dog are unrelated (neither extends the other). The compiler knows this cast can never succeed, so it forbids it.
 Object o = new Cat();
 Dog d = (Dog) o; // compiles (Object ↔ Dog are related), but will throw ClassCastException at runtime
