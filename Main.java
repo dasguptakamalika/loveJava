@@ -8,6 +8,6 @@ public class Main {
         System.out.println(d.name + " : " + "The goodest Girl");  
     } 
 } 
-//new Dog() = object in memory 
+//new Dog() = object in memory  
   
 //d = reference pointing to that object
