@@ -3,7 +3,7 @@ class Box {
     int value;
     Box(int v){ value = v; }
 }
-
+ 
 class Player {
     String name;
     Box box;                 // reference to another object
