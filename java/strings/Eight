@@ -1,4 +1,4 @@
-public class MaxAvg {
+ public class MaxAvg {
   public static void main(String[] args) {
     int[] a = {2,7,1,9,4};
     int max = a[0], sum=0;
