@@ -1,7 +1,7 @@
 public class NormalizeSpaces {
   public static void main(String[] args) {
     String s = "  I   love   Java   ";
-    String t = s.trim().replaceAll("\\s+", " ");
+    String t = s.trim().replaceAll("\\s+", " "); 
     System.out.println(t); // I love Java
   }
 }
