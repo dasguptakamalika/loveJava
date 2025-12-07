@@ -5,7 +5,7 @@ class Box {
 }
  
 class Player {
-    String name;
+    String name; 
     Box box;                 // reference to another object
  
     Player(String name, Box box) {
