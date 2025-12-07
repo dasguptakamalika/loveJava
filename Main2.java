@@ -5,7 +5,7 @@ public class Main2 {
         Dog d1 = new Dog();
         d1.name = "Bruno";
         Dog d2 = d1;
-
+ 
         d2.name = "Whiskers";
         System.out.println(d2.name + " " + d1.name);
         System.out.println(d2.name==d1.name);
@@ -16,5 +16,6 @@ public class Main2 {
 So changing d2.name changes the same Dog that d1 references →
 
 both print “Whiskers”.*/ 
+
 
 
