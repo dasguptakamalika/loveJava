@@ -15,4 +15,4 @@ public class Main {
         s.setName("Kamalika");          // using setter
         System.out.println(s.getName()); // using getter → Kamalika
     }
-}
+} 
