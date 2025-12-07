@@ -8,4 +8,4 @@ public class S7 {
         System.out.println(a.value); // 5   (different objects) okay!
         System.out.println(b.value); // 100
     }
-}
+} 
