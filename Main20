@@ -9,3 +9,4 @@ public class S7 {
         System.out.println(b.value); // 100
     }
 } 
+ 
