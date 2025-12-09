@@ -1,7 +1,7 @@
 System.out.println(d); where d == null → prints "null" (no dereference)
 System.out.println(d.name); when d == null → compiles, but throws NullPointerException at runtime (because it dereferences d)
 It’s a compile-time error only if name doesn’t exist/isn’t visible, or the types don’t match (e.g., Dog d = "doggo";)
-
+ 
 
 Assignment: RHS must be the same type, a subtype, or null.
 Cast is only allowed if types are related (one is a subtype/supertype of the other). Otherwise: inconvertible types.
