@@ -9,7 +9,7 @@ class Box {
  
 public class S3 {
     public static void main(String[] args) { 
-        Box b = new Box(); 
+        Box b = new Box();  
         b.setValue(42); 
         System.out.println(b.value); // 42
     }
