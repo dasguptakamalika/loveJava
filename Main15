@@ -10,4 +10,4 @@ public class S2 {
         System.out.println(b.value); // 10
     }
 }
-* new Box() creates an object. * b is a **reference** pointing to that object. * b.value reaches inside it. ---
+* new Box() creates an object. * b is a **reference** pointing to that obj ect. * b.value reaches inside it. ---
