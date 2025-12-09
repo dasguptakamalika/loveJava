@@ -10,7 +10,7 @@ int value;
   
  public class S7 
 { 
-public static void main(String[] args) 
+public static void main(String[] args)  
 { 
 Box a = new Box(5);  
 Box b = new Box(5); 
