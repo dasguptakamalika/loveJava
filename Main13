@@ -4,7 +4,7 @@ class Holder {
     Holder(Box b){ this.box = b; } // aliasing
 } 
 
-Box b = new Box("A");
+Box b = new Box("A"); 
 Holder h = new Holder(b);  
 b.v = "B";  
 System.out.println(h.box.v); // ? //very imp
