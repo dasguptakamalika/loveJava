@@ -13,3 +13,4 @@ public class SeparateExample {
         System.out.println(b.value); // 200
     }
 }
+ 
