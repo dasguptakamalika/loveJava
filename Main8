@@ -8,3 +8,4 @@ class Counter {
 int v = new Counter().increment().add(3).increment().get(); // 5
  
  
+ 
