@@ -4,7 +4,7 @@ class Box {
     Box(int v){ value = v; }
 }
  
-class Player {
+class Player { 
     String name; 
     Box box;                 // reference to another object
  
