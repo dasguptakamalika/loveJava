@@ -8,7 +8,7 @@ public class Vowels {
     for (int i = 0; i < s.length(); i++) {
       char c = s.charAt(i);
       if (vowels.indexOf(c) >= 0) { 
-        count++;
+        count++; 
       }  
     }
     
