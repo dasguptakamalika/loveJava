@@ -6,7 +6,7 @@ class Address {
 class Person {
     String name;
     Address address;              // reference to another object
-
+ 
     Person(String name, Address addr) {
         this.name = name; 
         this.address = addr;      // shares the same Address object (aliasing)
