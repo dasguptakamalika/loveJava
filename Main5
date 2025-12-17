@@ -11,5 +11,5 @@ class Dog {
     Dog(String name, int age) { // main ctor
         this.name = name;
         this.age = age;
-    }
+    } 
 } 
