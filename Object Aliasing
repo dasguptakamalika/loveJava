@@ -16,7 +16,7 @@ public class AliasExample {
         System.out.println(a.value); // 200
         System.out.println(b.value); // 200
     }
-}
+} 
    check alias diag
 // KEY INSIGHT: `a` and `b` are ALIASES - different names for the same object!
 Reference Assignment: b = a copies the memory address, not the object
