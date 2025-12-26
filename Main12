@@ -15,3 +15,4 @@ class Profile implements Cloneable {
         catch (CloneNotSupportedException e) { throw new AssertionError(e); }
     }
 }
+ 
