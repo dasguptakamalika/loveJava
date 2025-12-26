@@ -11,3 +11,4 @@ public class S2 {
     }
 }
 * new Box() creates an object. * b is a **reference** pointing to that obj ect. * b.value reaches inside it. ---
+ 
