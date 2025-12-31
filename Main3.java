@@ -8,7 +8,7 @@ public class Main3 {
         String s4 = new String("Hello"); 
 
         System.out.println(s1==s2); 
-        System.out.println(s3.equals(s4));
+        System.out.println(s3.equals(s4)); 
 
         System.out.println("s1 hash: " + System.identityHashCode(s1)); 
         System.out.println("s2 hash: " + System.identityHashCode(s2));
@@ -24,6 +24,7 @@ public class Main3 {
     }
 
 }
+
 
 
 
