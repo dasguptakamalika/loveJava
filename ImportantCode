@@ -12,7 +12,7 @@ class Box {
 Box(int v) 
 {  
 value = v;  
-}
+} 
 }
 class Player {
     String name;
