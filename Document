@@ -4,7 +4,7 @@ It’s a compile-time error only if name doesn’t exist/isn’t visible, or the
  
 
 Assignment: RHS must be the same type, a subtype, or null.
-Cast is only allowed if types are related (one is a subtype/supertype of the other). Otherwise: inconvertible types.
+Cast is only allowed if types are related (one is a subtype/supertype of the other). Otherwise: inconvertible types. 
 Dog d = new Object();
 Object o = new Dog();     // ✅ upcast: always allowed (Dog → Object)
 Error: incompatible types: Object cannot be converted to Dog
