@@ -11,7 +11,7 @@ value = v;
  
 class Player {
     String name; 
-    Box box;                 // reference to another object 
+    Box box;                 // reference to another object  
 
     Player(String name, Box box) {
         this.name = name;    // set my name
