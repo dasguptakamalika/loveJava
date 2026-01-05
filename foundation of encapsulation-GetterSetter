@@ -6,7 +6,7 @@ class Student {
     }
     public void setName(String name) {   // setter
         this.name = name; 
-    }
+    } 
 }  
 
 public class Main {
