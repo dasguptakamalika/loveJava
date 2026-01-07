@@ -7,7 +7,7 @@ public static void main(String[] args)
     System.out.println(d);
 } 
 } output : null 
--------------------
+------------------- 
 package org.example;
 
 public class Main4 {
