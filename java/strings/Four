@@ -9,7 +9,7 @@ public class PalClean {
       i++; j--;
     }
     return true; 
-  }
+  } 
   public static void main(String[] args) { 
     System.out.println(isPal("A man, a plan, a canal: Panama")); // true
   }
