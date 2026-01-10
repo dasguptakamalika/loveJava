@@ -6,7 +6,7 @@ public class Builders {
 
     StringBuffer sf = new StringBuffer(); // thread-safe (synchronized)
     for (int i=1;i<=3;i++) sf.append("X");
-    System.out.println(sf.toString()); // XXX
+    System.out.println(sf.toString()); // XXX 
   }  
 }
   
