@@ -12,7 +12,7 @@ class Player {
         this.name = name;    // set my name
         this.box = box;      // store the SAME Box reference (sharing)
     }
-}
+} 
 
 public class S9 {
     public static void main(String[] args) {
