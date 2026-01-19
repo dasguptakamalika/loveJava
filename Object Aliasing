@@ -1,4 +1,4 @@
-Box a = new Box(7);   // create a Box object, a → that object
+ Box a = new Box(7);   // create a Box object, a → that object
 Box b = a;            // b now refers to the SAME object as a
 b.value = 200;        // change the field via b
 System.out.println(a.value); // prints 200, because a and b share the object
