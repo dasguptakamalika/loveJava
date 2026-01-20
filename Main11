@@ -1,4 +1,4 @@
- class User {
+  class User {
     final String email;
     User(String email) { 
         if (email == null || !email.contains("@"))
