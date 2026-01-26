@@ -1,0 +1,13 @@
+class ListNode {
+    int value;  // ← CLASS VARIABLE (storage box)
+    ListNode next;
+    
+    ListNode(int inputNumber) {     // ← PARAMETER catches 42
+        this.value = inputNumber;    // ← Put 42 into CLASS VARIABLE
+        //   ↑            ↑
+        // class var   parameter
+    }
+}
+
+ListNode node = new ListNode(42);
+// Result: node.value = 42 
