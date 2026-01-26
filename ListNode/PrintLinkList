@@ -1,56 +1,38 @@
 class ListNode {
     int val;
     ListNode next;
-    
-    ListNode(int val) {
-        this.val = val;
+
+    ListNode(int value) {
+        this.val = value;
         this.next = null;
     }
 }
- 
-// Solution class with the printList method
+
 class Solution {
     public void printList(ListNode head) {
         ListNode current = head;
-        
+
         while (current != null) {
             System.out.print(current.val + " ");
             current = current.next;
         }
-        System.out.println();  // New line at the end
+        System.out.println();
     }
 }
 
-// Main class to test the code
 public class Main {
     public static void main(String[] args) {
-        // Create individual nodes
+        // Create nodes
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(3);
-        ListNode node4 = new ListNode(4);
-        
-        // Link the nodes together: 1 → 2 → 3 → 4 → null
+        ListNode node3 = new ListNode(81);
+
+        // Link them: 1 → 2 → 3 → null
         node1.next = node2;
         node2.next = node3;
-        node3.next = node4;
-        // node4.next is already null (from constructor)
-        
-        // Create solution object and print the list
+
+        // Print the list
         Solution solution = new Solution();
-        System.out.println("Linked List:");
-        solution.printList(node1);  // Output: 1 2 3 4
-        
-        // Test with a different list
-        ListNode head2 = new ListNode(10);
-        head2.next = new ListNode(20);
-        head2.next.next = new ListNode(30);
-        
-        System.out.println("Another Linked List:");
-        solution.printList(head2);  // Output: 10 20 30
-        
-        // Test with empty list
-        System.out.println("Empty List:");
-        solution.printList(null);  // Output: (nothing, just new line)
+        solution.printList(node1);  // Output: 1 2 3
     }
 }
