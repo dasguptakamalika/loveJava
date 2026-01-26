@@ -7,7 +7,7 @@ class ListNode {
         this.next = null;
     }
 }
-
+ 
 // Solution class with the printList method
 class Solution {
     public void printList(ListNode head) {
