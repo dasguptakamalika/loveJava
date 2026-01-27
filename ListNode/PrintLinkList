@@ -4,7 +4,8 @@ class ListNode {
 
     ListNode(int value) {
         this.val = value;
-        this.next = null;
+        this.next = null;  //Writing this.next = null; makes it obvious that you're intentionally creating a node with no connection.
+                           //cause later we are connecting them
     }
 }
 
