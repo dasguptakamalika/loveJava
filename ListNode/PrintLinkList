@@ -9,7 +9,7 @@ class ListNode {
 }
 
 class Solution {
-    public void printList(ListNode head) {
+    public void printList(ListNode head) {  //Because you need to tell the method where to start printing from!
         ListNode current = head;
 
         while (current != null) {
