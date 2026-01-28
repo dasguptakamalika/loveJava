@@ -7,7 +7,7 @@ class Profile implements Cloneable {
     // static factory
     static Profile copyOf(Profile p) { 
         return new Profile(p);  
-    } 
+    }  
 
     // clone (rarely recommended; tricky with deep copies)
     @Override protected Profile clone() {
