@@ -12,5 +12,5 @@ public class S3 {
         Box b = new Box();  
         b.setValue(42); 
         System.out.println(b.value); // 42
-    }
+    } 
 } 
