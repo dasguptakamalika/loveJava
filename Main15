@@ -8,7 +8,7 @@ public class S2 {
         Box b = new Box();      // make a Box object
         b.value = 10;           // set its field 
         System.out.println(b.value); // 10
-    }
+    } 
 }
 * new Box() creates an object. * b is a **reference** pointing to that obj ect. * b.value reaches inside it. ---
  
