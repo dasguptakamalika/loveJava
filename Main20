@@ -1,4 +1,4 @@
-class Box { int value; Box(int v){ value = v; } }
+ class Box { int value; Box(int v){ value = v; } }
 
 public class S7 {
     public static void main(String[] args) {
