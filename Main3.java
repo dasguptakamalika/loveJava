@@ -13,7 +13,7 @@ public class Main3 {
         System.out.println("s1 hash: " + System.identityHashCode(s1)); 
         System.out.println("s2 hash: " + System.identityHashCode(s2));
         System.out.println("s3 hash: " + System.identityHashCode(s3));
-        System.out.println("s4 hash: " + System.identityHashCode(s4));
+        System.out.println("s4 hash: " + System.identityHashCode(s4)); 
 
         String Pool:
 ┌─────────────────┐
@@ -24,6 +24,7 @@ public class Main3 {
     }
 
 }
+
 
 
 
