@@ -11,6 +11,6 @@ public class SeparateExample {
 
         System.out.println(a.value); // 7 
         System.out.println(b.value); // 200
-    }
+    } 
 } 
  
