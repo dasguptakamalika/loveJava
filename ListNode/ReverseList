@@ -19,7 +19,7 @@ class Solution {
             prev = current;                    // Move prev forward
             current = nextNode;                // Move current forward
         }
-        return prev;  // prev is the new head
+        return prev;  // prev is the new head   //The node that ends with null is the last node, and after reversing, that node is 1, not 81.
     }
 
     public void printList(ListNode head) {
