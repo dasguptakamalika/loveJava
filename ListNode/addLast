@@ -7,7 +7,7 @@
         this.next = null;
     }
 }
-    class Solution {
+    class Solution { 
 
 
         public ListNode addLast(ListNode head, int val) {
@@ -73,6 +73,13 @@ head doesn't care what current is doing. It just stays at the front. */
                 ListNode head = new ListNode(1);
                 head.next = new ListNode(12);
                 head.next.next = new ListNode(87);
+
+
+
+   /* Changed to Way 1 (like addFirst)
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(12);
+        ListNode node3 = new ListNode(87);*/
 
                 sol.printList(head);
 
