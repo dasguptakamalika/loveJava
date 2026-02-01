@@ -6,7 +6,7 @@ class ListNode {
         this.val = value;
         this.next = null;
     }
-}
+} 
 
 class Solution {
     // Add node at the beginning
