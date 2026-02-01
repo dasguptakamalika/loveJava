@@ -10,7 +10,7 @@ public static void main(String[] args)
 ------------------- 
 package org.example;
 
-public class Main4 {
+public class Main4 { 
 public static void main(String[] args)
 {
     Dog d =null;  
