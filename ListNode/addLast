@@ -25,6 +25,34 @@ class ListNode {
             return head;
         }
 
+/*
+
+ListNode head = new ListNode(1);   // head points to [1]
+```
+
+`head` is just pointing to the **first node [1]**. That's it.
+
+---
+
+**Inside addLast, `current` does all the moving:**
+```
+head →    [1] → [12] → [34] → null
+current →  [1]                          // Start here
+
+current →        [12]                   // Moved here
+
+current →               [34]            // Moved here, stopped
+
+
+Only current moved. head stayed.
+Think of it like two people standing in a line:
+
+head = standing at the front, never moves
+current = walks to the back of the line
+
+head doesn't care what current is doing. It just stays at the front. */
+
+
         public void printList(ListNode head) {
             ListNode current = head;
             while (current != null) {
