@@ -2,58 +2,61 @@ class ListNode {
     int val;
     ListNode next;
 
-    ListNode(int value) {
+    public ListNode(int value) {
         this.val = value;
         this.next = null;
     }
 }
+    class Solution {
 
-class Solution {
-    public ListNode addLast(ListNode head, int val) {
-        ListNode newNode = new ListNode(val);
-        
-        if (head == null) {
-            return newNode;
+
+        public ListNode addLast(ListNode head, int val) {
+            ListNode newNode = new ListNode(val);
+            if (head == null)
+                return newNode;         // head is null → current is null → can't do .next on null → CRASH
+
+            // So we check first and return early before it crashes
+            ListNode current = head;
+            //current is just a copy of the reference, not a change to head.
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+            return head;
         }
-        
-        ListNode current = head;
-        while (current.next != null) {
-            current = current.next;
+
+        public void printList(ListNode head) {
+            ListNode current = head;
+            while (current != null) {
+                System.out.print(current.val + " "); //current is a listnode, hence can access val, imp line
+                current = current.next;
+
+            }
+            System.out.println();
+
         }
-        current.next = newNode;
-        return head;
     }
 
-    public void printList(ListNode head) {
-        ListNode current = head;
-        while (current != null) {
-            System.out.print(current.val + " ");
-            current = current.next;
+        public class Practice {
+            public static void main(String[] args) {
+                Solution sol = new Solution();
+
+
+                ListNode head = new ListNode(1);
+                head.next = new ListNode(12);
+                head.next.next = new ListNode(87);
+
+                sol.printList(head);
+
+               head=  sol.addLast(head, 500); //a copy of the reference to the first node (head)
+                sol.printList(head);
+
+            }
         }
-        System.out.println();
-    }
-}
 
-public class Main {
-    public static void main(String[] args) {
-        Solution sol = new Solution();
 
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(22);
-        head.next.next = new ListNode(81);
 
-        System.out.print("Before: ");
-        sol.printList(head);
 
-        head = sol.addLast(head, 100);
 
-        System.out.print("After: ");
-        sol.printList(head);
-    }
-}
-```
 
-**Output:**
 
-Before: 1 22 81 
-After: 1 22 81 100
