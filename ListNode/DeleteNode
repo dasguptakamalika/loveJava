@@ -1,1 +1,67 @@
 
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int value) {
+        this.val = value;
+        this.next = null;
+    }
+}
+
+class Solution {
+    public ListNode deleteNode(ListNode head, int val) {
+        if (head == null) return null;
+
+        // If head needs to be deleted
+        if (head.val == val) {
+            return head.next;
+        }
+
+        ListNode current = head;
+        while (current.next != null) {
+            if (current.next.val == val) {
+                current.next = current.next.next;  // Skip the node
+                break;
+            }
+            current = current.next;
+        }
+        return head;
+    }
+
+    public void printList(ListNode head) {
+        ListNode current = head;
+        while (current != null) {
+            System.out.print(current.val + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(22);
+        ListNode node3 = new ListNode(81);
+
+        node1.next = node2;
+        node2.next = node3;
+
+        System.out.print("Before: ");
+        sol.printList(node1);
+
+        node1 = sol.deleteNode(node1, 22);
+
+        System.out.print("After: ");
+        sol.printList(node1);
+    }
+}
+```
+
+**Output:**
+```
+Before: 1 22 81 
+After: 1 81
