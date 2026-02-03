@@ -1,6 +1,6 @@
  class Solution {
     public int maxProfit(int[] prices) {
-        int minPrice = Integer.MAX_VALUE;
+        int minPrice = Integer.MAX_VALUE; //max value, as price cannot be -ve or more than this
         int maxProfit = 0;
 
         for (int price : prices) {
