@@ -15,3 +15,7 @@
     }
 }
 //In prices[i], i is the index (day number), not the price.
+
+
+/* maxProfit = best profit so far
+price - minPrice = today’s possible profit */
