@@ -10,7 +10,7 @@ public class Anagram {
   public static void main(String[] args){
     System.out.println(isAnagram("listen","silent")); // true
     System.out.println(isAnagram("rat","car"));       // false 
-  }
+  } 
 }
  
  
