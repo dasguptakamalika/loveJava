@@ -15,7 +15,7 @@ class Player {
 
     Player(String name, Box box) {
         this.name = name;    // set my name
-        this.box = box;      // store the SAME Box reference (sharing)
+        this.box = box;      // store the SAME Box reference (sharing) 
     }
 }
 
