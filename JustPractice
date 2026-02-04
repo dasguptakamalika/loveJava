@@ -2,7 +2,7 @@
 class Box { 
 int value;
  Box(int v) 
-{ value = v; 
+{ value = v;  
 }
 
 } 
