@@ -16,3 +16,4 @@ public class LongestUnique {
     System.out.println(lengthOfLongestSubstring("abcabcbb")); // 3 ("abc")
   }
 }
+ 
