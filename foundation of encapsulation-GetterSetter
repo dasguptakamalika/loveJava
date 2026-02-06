@@ -1,4 +1,4 @@
-class Student {
+ class Student {
     private String name;  // private field
 
     public String getName() {   // getter
