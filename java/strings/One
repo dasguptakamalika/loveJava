@@ -13,7 +13,7 @@ public class Vowels {
     }
     
     System.out.println(count); // 4
-  }
+  } 
 }
 //for (char c : s.toCharArray()) if (vowels.indexOf(c) >= 0) count++;
 /* s = The sentence being analyzed (the "subject")
