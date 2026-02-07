@@ -1,4 +1,4 @@
- class Address {
+  class Address {
     String city;
     Address(String city) { this.city = city; }
     Address(Address other) { this.city = other.city; } // copy ctor
