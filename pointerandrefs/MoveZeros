@@ -4,7 +4,7 @@ class MoveZeroes
 
 
 public void MoveZeroes(int[] nums)
-{
+{ 
 int index=0; 
 
 for(int i = 0 ;i <nums.length;i++)
@@ -25,7 +25,11 @@ nums[index]=0;
 index++;
 }
 
-/* Anything that must be remembered across iterations
+/* 
+What is the job of this loop?
+Fill all remaining positions with 0
+
+Anything that must be remembered across iterations
 must be declared outside the loop.
 i → changes every iteration → belongs inside for
 index → remembers progress → must be outside */
