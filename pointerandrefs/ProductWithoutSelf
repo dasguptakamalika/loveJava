@@ -6,8 +6,10 @@ class Solution {
 
         // Step 1: left products
         result[0] = 1;
-        for (int i = 1; i < n; i++) {
-            result[i] = result[i - 1] * nums[i - 1];
+        for (int i = 1; i < n; i++) { 
+            result[i] = result[i - 1] * nums[i - 1];  
+//in the first (left) loop, you did NOT take products to the right of i.
+//It looks like that because of nums[i - 1], but it’s actually still left of i.
         }
 
         // Step 2: right products
@@ -20,3 +22,4 @@ class Solution {
         return result;
     }
 }
+ 
