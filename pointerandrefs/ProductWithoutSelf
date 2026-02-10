@@ -17,6 +17,8 @@ class Solution {
         for (int i = n - 1; i >= 0; i--) {
             result[i] = result[i] * right;
             right = right * nums[i];
+//Multiply result[i] (which has left product) by right → gives the correct final product for index i.
+//Update right to include nums[i] → so that the next index to the left will have the full product of elements to its right.
         }
 
         return result;
