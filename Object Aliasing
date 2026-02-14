@@ -4,7 +4,7 @@ b.value = 200;        // change the field via b
 System.out.println(a.value); // prints 200, because a and b share the object
 class Box {
     int value;
-    Box(int v) { value = v; }
+    Box(int v) { value = v; } 
 }
   
 public class AliasExample {
