@@ -11,3 +11,4 @@ class ListNode {
 
 ListNode node = new ListNode(42);
 // Result: node.value = 42 
+ 
