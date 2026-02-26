@@ -9,7 +9,7 @@ All three variables are essentially different names for the same object - like h
  
 class Box {
     int value;  
-Box(int v) 
+Box(int v)  
 {  
 value = v;  
 } 
