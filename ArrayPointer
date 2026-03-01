@@ -1,4 +1,4 @@
-class Solution {
+ class Solution {
     public void moveZeroes(int[] nums) {
         int index = 0;  // position to place next non-zero
 
