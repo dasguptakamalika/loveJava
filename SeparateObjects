@@ -1,7 +1,7 @@
 class Box {
     int value;
     Box(int v) { value = v; }
-}
+} 
 
 public class SeparateExample { 
     public static void main(String[] args) { 
