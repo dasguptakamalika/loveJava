@@ -8,7 +8,7 @@ class Box {
     int getValue() {           // getter, read-only setter have no return 
         return value;
     }
-} 
+}  
   
    
  
