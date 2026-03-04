@@ -14,7 +14,7 @@ public class Main3 {
         System.out.println("s2 hash: " + System.identityHashCode(s2));
         System.out.println("s3 hash: " + System.identityHashCode(s3));
         System.out.println("s4 hash: " + System.identityHashCode(s4)); 
-
+ 
         String Pool:
 ┌─────────────────┐
 │ "Hello" object  │ ← BOTH s1 and s2 point to this SAME object
@@ -24,6 +24,7 @@ public class Main3 {
     }
 
 }
+
 
 
 
