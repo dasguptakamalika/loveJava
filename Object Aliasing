@@ -10,7 +10,7 @@ class Box {
 public class AliasExample {
     public static void main(String[] args) {
         Box a = new Box(7);  // a → Box with value = 7
-        Box b = a;           // b points to the SAME object
+        Box b = a;           // b points to the SAME object 
         b.value = 200;       // change via b
 
         System.out.println(a.value); // 200
