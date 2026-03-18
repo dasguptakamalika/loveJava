@@ -1,6 +1,6 @@
   Dog d = "doggo";
 System.out.println(d);  
-// see how it create compile time error.
+// see how it create compile time error. error: incompatible types: String cannot be converted to Dog
  
  
      
