@@ -4,7 +4,7 @@
 
     Dog() {                    // default
         this("Puppy", 0); 
-    } 
+    }  
     Dog(String name) {         // overloaded 
         this(name, 1);
     } 
