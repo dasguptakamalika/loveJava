@@ -17,7 +17,7 @@ public class Demo {
     public static void main(String[] args) {
         Address a = new Address("Boston");
         Person p = new Person("Kamalika", a);
-
+  
         a.city = "NYC";           // modifies shared object
         System.out.println(p.address.city); // NYC (same object!) 
     }
