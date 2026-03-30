@@ -6,7 +6,7 @@ class Dog {
         this("Puppy", 0);
     } 
     Dog(String name) {         // overloaded 
-        this(name, 1);
+        this(name, 1);    
     }
     Dog(String name, int age) { // main ctor
         this.name = name;
