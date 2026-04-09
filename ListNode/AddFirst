@@ -10,7 +10,7 @@ class ListNode {
 
 class Solution {
     // Add node at the beginning
-    public ListNode addFirst(ListNode head, int val) {
+    public ListNode addFirst(ListNode head, int val) {  
         ListNode newNode = new ListNode(val);  // Create new node
         newNode.next = head;                    // Connect new node to old head
         return newNode;                         // Return new node as new head
