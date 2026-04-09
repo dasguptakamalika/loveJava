@@ -6,7 +6,7 @@ class ListNode {
     ListNode(int value) {
         this.val = value;
         this.next = null;
-    }
+    } 
 }
 
 class Solution {
