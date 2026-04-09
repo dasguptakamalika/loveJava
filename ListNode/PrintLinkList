@@ -6,7 +6,7 @@ class ListNode {
         this.val = value;
         this.next = null;  //Writing this.next = null; makes it obvious that you're intentionally creating a node with no connection.
                            //cause later we are connecting them
-    }
+    } 
 }
  
 class Solution {
