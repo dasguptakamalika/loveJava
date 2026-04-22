@@ -1,4 +1,4 @@
-In this Java code, we're seeing how object references work with shared memory. 
+  In this Java code, we're seeing how object references work with shared memory. 
 When Box shared = new Box(10) executes, it creates a single Box object in memory with value 10. 
 Then when the Player constructor runs with this.box = box, it's not creating a new Box object - instead,
 it's copying the reference (memory address) that points to that same Box object. So now we have three variables: 
