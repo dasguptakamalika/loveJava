@@ -9,6 +9,6 @@ class ListNode {
     }
 }
 
-ListNode node = new ListNode(42);
+ListNode node = new ListNode(42); 
 // Result: node.value = 42 
   
