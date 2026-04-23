@@ -7,7 +7,7 @@
         return new Person(name, city);
     }
 }
-
+ 
 Person p = Person.fromNameAndCity("Kamalika", "Seattle");
  
  
