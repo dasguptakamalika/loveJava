@@ -9,7 +9,7 @@
 }
     class Solution {  
 
-
+ 
         public ListNode addLast(ListNode head, int val) {
             ListNode newNode = new ListNode(val);
             if (head == null)
