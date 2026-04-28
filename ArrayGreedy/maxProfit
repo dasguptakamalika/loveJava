@@ -18,6 +18,6 @@
 
 
 /* maxProfit = best profit so far
-price - minPrice = today’s possible profit 
+price - minPrice = today’s possible profit  
 “Up to today, what is the best profit I could have made so far?”
 That’s why maxProfit exists every day.*/
