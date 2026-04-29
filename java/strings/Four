@@ -6,7 +6,7 @@
       if(!Character.isLetterOrDigit(a)){ i++; continue; }
       if(!Character.isLetterOrDigit(b)){ j--; continue; } 
       if(Character.toLowerCase(a)!=Character.toLowerCase(b)) return false;
-      i++; j--;
+      i++; j--;  
     }
     return true; 
   } 
