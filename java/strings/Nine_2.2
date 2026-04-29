@@ -6,7 +6,7 @@ public class TwoSumSorted {
       int s=a[i]+a[j];
       if(s==target) return new int[]{i,j};  
       if(s<target) i++; else j--;
-    }
+    }   
     return new int[]{-1,-1};
   }  
   public static void main(String[] args){
