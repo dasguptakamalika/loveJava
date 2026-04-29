@@ -1,8 +1,8 @@
-  public class Reverse {
+    public class Reverse {
   public static void main(String[] args) {
     String s = "abcd";
     String rev = new StringBuilder(s).reverse().toString();
-    System.out.println(rev); // dcba
+    System.out.println(rev); // dcba 
   }
 }
  
