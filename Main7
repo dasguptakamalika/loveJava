@@ -5,7 +5,7 @@
     // static factory method
     static Person fromNameAndCity(String name, String city) {
         return new Person(name, city);
-    }
+    } 
 }
  
 Person p = Person.fromNameAndCity("Kamalika", "Seattle");
