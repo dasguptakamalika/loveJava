@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         Student s = new Student(); 
         s.setName("Kamalika");          // using setter
-        System.out.println(s.getName()); // using getter → Kamalika
+        System.out.println(s.getName()); // using getter → Kamalika 
     }
 } 
  
