@@ -7,7 +7,7 @@ class ListNode {
         //   ↑            ↑
         // class var   parameter
     }
-}
+}   
 
 ListNode node = new ListNode(42); 
 // Result: node.value = 42 
