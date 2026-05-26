@@ -3,7 +3,7 @@
 public class Main4 {
 public static void main(String[] args)
 {
-    Dog d =null;
+    Dog d =null; 
     System.out.println(d); 
 } 
 } output : null 
