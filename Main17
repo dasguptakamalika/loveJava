@@ -1,4 +1,4 @@
-A **constructor** runs **automatically** right after new. It sets the object up.
+  A **constructor** runs **automatically** right after new. It sets the object up.
 java
 class Box {
     int value;
