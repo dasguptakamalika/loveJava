@@ -15,7 +15,7 @@ class Solution {
         newNode.next = head;                    // Connect new node to old head
         return newNode;                         // Return new node as new head
     }
-
+ 
     // Print the list
     public void printList(ListNode head) {
         ListNode current = head;
