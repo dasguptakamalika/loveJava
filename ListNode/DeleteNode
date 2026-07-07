@@ -8,7 +8,7 @@ class ListNode {
         this.next = null;
     } 
 }
-
+ 
 class Solution {
     public ListNode deleteNode(ListNode head, int val) {
         if (head == null) return null;
