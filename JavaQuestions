@@ -1,0 +1,22 @@
+import java.util.*;
+
+class Result {
+
+    public static int getMinAmount(List<Integer> quality) {
+
+        Map<Integer, Integer> frequencyMap = new HashMap<>();
+        int maximumFrequency = 0;
+
+        for (int value : quality) {
+            int newFrequency =
+                    frequencyMap.getOrDefault(value, 0) + 1;
+
+            frequencyMap.put(value, newFrequency);
+
+            maximumFrequency =
+                    Math.max(maximumFrequency, newFrequency);
+        }
+
+        return quality.size() - maximumFrequency;
+    }
+}
