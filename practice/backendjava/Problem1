@@ -1,0 +1,57 @@
+Warehouse Package Frequency
+An Amazon warehouse stores package type IDs in a list packages, where each integer represents a package category. 
+The warehouse wants to identify the package type that appears most frequently so that it can allocate the largest storage area to it.
+Write a function that returns the package type with the highest frequency. If two package types have the same highest frequency, return the smaller package type.
+public static int getMostFrequentPackage(List<Integer> packages)
+Example:
+Input:  [4, 2, 4, 3, 2, 4]
+Output: 4 dont reply 
+
+
+
+
+
+
+
+
+import java.util.*;
+
+public class Main {
+
+    public static int getMostFrequentPackage(List<Integer> packages) {
+
+        Map<Integer, Integer> map = new HashMap<>();
+
+        // Count frequency
+        for (int val : packages) {
+            map.put(val, map.getOrDefault(val, 0) + 1);
+        }
+
+        int maxFrequency = 0;
+        int result = Integer.MAX_VALUE;
+
+        // Find the winner
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+
+            int packageId = entry.getKey();
+            int frequency = entry.getValue();
+
+            if (frequency > maxFrequency) {
+                maxFrequency = frequency;
+                result = packageId;
+            }
+            else if (frequency == maxFrequency && packageId < result) {
+                result = packageId;
+            }
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        List<Integer> packages = Arrays.asList(4, 2, 4, 3, 2, 4);
+
+        System.out.println(getMostFrequentPackage(packages)); // 4
+    }
+}
