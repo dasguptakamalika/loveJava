@@ -12,7 +12,7 @@
         } 
 
         return maxProfit;
-    }
+    } 
 }
 //In prices[i], i is the index (day number), not the price.
 
