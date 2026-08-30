@@ -17,6 +17,6 @@ class Result {
                     Math.max(maximumFrequency, newFrequency);
         }
 
-        return quality.size() - maximumFrequency;
+        return quality.size() - maximumFrequency; 
     }
 }
