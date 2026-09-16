@@ -2,7 +2,7 @@
     private String name;  // private field
 
     public String getName() {   // getter
-        return name;
+        return name; 
     }   
     public void setName(String name) {   // setter 
         this.name = name; 
