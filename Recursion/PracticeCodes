@@ -21,3 +21,24 @@ System.out.println(printNumbers(6));
     }
 }
 
+!!!!explanation!!!!
+
+printNumbers(3)
+    ↓
+3 * printNumbers(2)
+            ↓
+        2 * printNumbers(1)
+                    ↓
+                  return 1
+                    ↓
+              2 * 1 = 2
+                    ↓
+              return 2
+                    ↓
+              3 * 2 = 6
+                    ↓
+              return 6
+                    ↓
+        System.out.println(6)
+                    ↓
+                    6
