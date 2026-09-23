@@ -1,1 +1,23 @@
 
+package org.example;
+//print 1 to N
+
+public class Main {
+    public static void main(String[] args)
+    {
+System.out.println(printNumbers(6));
+
+    }
+
+    public static int printNumbers(int n)
+    {
+        if(n==1)
+        {
+            return 1;
+        }
+
+
+       return n * printNumbers(n-1);
+    }
+}
+
