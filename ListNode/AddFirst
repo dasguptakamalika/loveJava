@@ -3,7 +3,7 @@
     ListNode next;
 
     ListNode(int value) {
-        this.val = value;
+        this.val = value; 
         this.next = null;
     }
 } 
