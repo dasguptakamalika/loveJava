@@ -12,7 +12,7 @@ class Solution {
 //It looks like that because of nums[i - 1], but it’s actually still left of i.
         }
 
-        // Step 2: right products
+        // Step 2: right products 
         int right = 1; 
         for (int i = n - 1; i >= 0; i--) {
             result[i] = result[i] * right;
