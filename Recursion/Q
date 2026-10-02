@@ -15,6 +15,7 @@ public class Q
     q.add(10);
     q.add(20);
     q.add(30);
+//add can throw IllegalStateException , hence we have offer. much more robust
 System.out.println(q);
   }
 }
