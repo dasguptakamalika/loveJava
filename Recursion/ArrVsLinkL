@@ -5,3 +5,4 @@ Underlying Structure	Resizable Dynamic Array	Doubly-Linked List
 Random Access (Search by Index)	⚡ Fast (O(1)) — Immediate index lookup.	🐢 Slow (O(n)) — Must loop through elements.
 Data Manipulation (Insert/Delete)	🐢 Slow — Requires shifting elements in memory.	⚡ Fast (O(1)) — Just changes node pointers.
 Memory Overhead	Lower — Only allocates memory for the actual data.	Higher — Requires extra memory for forward/backward pointers.
+ 
