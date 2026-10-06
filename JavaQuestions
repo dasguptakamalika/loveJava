@@ -9,7 +9,7 @@ class Result {
 
         for (int value : quality) {
             int newFrequency =
-                    frequencyMap.getOrDefault(value, 0) + 1;
+                    frequencyMap.getOrDefault(value, 0) + 1; 
 
             frequencyMap.put(value, newFrequency);
 
