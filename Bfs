@@ -40,6 +40,8 @@ public class Main {
     }
 }
 
+///cant use 50 , as the numbers used in the 2d array are nodes, which here is 4, hence arrrayoutofbounds exception [VIMP]
+
 
 BFS repeatedly takes a NODE from the queue, prints/processes it, looks at that node's neighbors in the 2D array,
 and puts unvisited neighbors into the queue.
