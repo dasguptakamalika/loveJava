@@ -45,6 +45,14 @@ BFS repeatedly takes a NODE from the queue, prints/processes it, looks at that n
 and puts unvisited neighbors into the queue.
 Sure — **one paragraph, no table**:
 
+
+```java
+boolean[] visited = new boolean[4];
+```
+
+**Creates a boolean array object with 4 slots, all initially `false`, and stores its reference in `visited`.**
+
+
 We start with `bfs(graph, 0)`, so `start = 0`. We create an empty queue and a `visited` array of 4 `false` values.
 We add `0` to the queue and mark `visited[0] = true`. The queue is now `[0]`. The `while` loop runs because the queue isn't empty. 
 We `poll()` `0`, so `node = 0`, and print `0`. Then `graph[0]` gives us `{1, 2}`, meaning node 0 has neighbors 1 and 2. 
