@@ -43,3 +43,13 @@ public class Main {
 
 BFS repeatedly takes a NODE from the queue, prints/processes it, looks at that node's neighbors in the 2D array,
 and puts unvisited neighbors into the queue.
+Sure — **one paragraph, no table**:
+
+We start with `bfs(graph, 0)`, so `start = 0`. We create an empty queue and a `visited` array of 4 `false` values.
+We add `0` to the queue and mark `visited[0] = true`. The queue is now `[0]`. The `while` loop runs because the queue isn't empty. 
+We `poll()` `0`, so `node = 0`, and print `0`. Then `graph[0]` gives us `{1, 2}`, meaning node 0 has neighbors 1 and 2. 
+Neither has been visited, so we mark both as visited and add them to the queue → `[1, 2]`. Next, we poll `1`, print it, 
+and look at `graph[1] = {0, 3}`. Node 0 is already visited, so we ignore it; node 3 isn't, so we mark it visited and 
+add it → `[2, 3]`. Next we poll `2`, print it, and `graph[2] = {0}`; 0 is already visited, so nothing is added. 
+Finally, we poll `3`, print it, and `graph[3] = {1}`; 1 is already visited, so nothing is added. The queue is now empty, 
+so the loop stops. **Output: `0 1 2 3`.**
