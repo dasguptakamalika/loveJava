@@ -63,3 +63,49 @@ and look at `graph[1] = {0, 3}`. Node 0 is already visited, so we ignore it; nod
 add it → `[2, 3]`. Next we poll `2`, print it, and `graph[2] = {0}`; 0 is already visited, so nothing is added. 
 Finally, we poll `3`, print it, and `graph[3] = {1}`; 1 is already visited, so nothing is added. The queue is now empty, 
 so the loop stops. **Output: `0 1 2 3`.**
+
+
+Mate ❤️, we call it BFS because of HOW we explore the island.
+
+BFS stands for Breadth-First Search.
+
+Forget the code for a moment. Imagine you're standing on one piece of land.
+
+You want to discover every piece of land connected to it.
+
+### Why BFS?
+
+Suppose your grid looks like this:
+
+```
+1  1  0
+1  1  0
+0  0  1
+```
+
+You start at the top-left `1`.
+
+BFS does this:
+
+1. Start: Visit `(0,0)`.
+2. Check neighbors: Discover the land immediately to the right and below.
+3. Process those neighbors: Check their neighbors for more connected land.
+4. Repeat: Continue until there are no more connected land cells to explore.
+
+We use a queue to keep track of the cells waiting to be explored. Because a queue is FIFO, cells discovered earlier are processed first.
+
+That's the breadth-first part: explore nearby cells first, then expand outward.
+
+### So why is the method called `bfs()`?
+
+```
+bfs(grid, i, j);
+```
+
+Because we're telling the program:
+
+"Starting at this land cell, use Breadth-First Search to discover all connected land."
+
+And once BFS finishes, the outer loops can safely continue looking for another island.
+
+One important distinction: BFS is the exploration technique. Counting the separate islands is the job of `numIslands()`.
