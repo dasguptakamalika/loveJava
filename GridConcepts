@@ -2,3 +2,13 @@
 row 0     A       B       C
 row 1     D  ←    X       E
 row 2     F       G       H
+
+
+
+
+int[][] directions = {
+    {1, 0},
+    {-1, 0},
+    {0, 1},
+    {0, -1}
+};
