@@ -1,0 +1,15 @@
+### BFS – Number of Islands
+
+1. **Queue:** Stores the coordinates of cells waiting to be explored.
+2. **Start:** Add the starting cell using `q.add(new int[]{row, col})`.
+3. **Mark visited:** Change the starting cell from `'1'` to `'0'` to avoid revisiting it.
+4. **Process cells:** Use `q.poll()` to remove the first cell from the queue.
+5. **Get coordinates:** `cell[0]` gives the row, and `cell[1]` gives the column.
+6. **Check directions:** Explore down, up, right, and left using the `directions` array.
+7. **Calculate neighbors:** `newRow = r + dir[0]` and `newCol = c + dir[1]`.
+8. **Check boundaries:** Ensure the neighboring coordinates are inside the grid.
+9. **Check for land:** If `grid[newRow][newCol] == '1'`, the neighbor is unvisited land.
+10. **Add neighbors:** Mark the land as `'0'` and add its coordinates to the queue.
+11. **Repeat:** Continue until the queue is empty; the entire connected island has been explored.
+
+**Key idea:** Each time the outer loops find unvisited land, increment the island count and call BFS to explore the entire island.
