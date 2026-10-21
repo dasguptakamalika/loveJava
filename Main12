@@ -1,4 +1,4 @@
-class Profile implements Cloneable {
+ class Profile implements Cloneable {
     String handle;
 
     // copy constructor
