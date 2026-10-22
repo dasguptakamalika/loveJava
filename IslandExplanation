@@ -1,10 +1,28 @@
 ### BFS – Number of Islands
 
+
+
 1. **Queue:** Stores the coordinates of cells waiting to be explored.
 2. **Start:** Add the starting cell using `q.add(new int[]{row, col})`.
 3. **Mark visited:** Change the starting cell from `'1'` to `'0'` to avoid revisiting it.
 4. **Process cells:** Use `q.poll()` to remove the first cell from the queue.
 5. **Get coordinates:** `cell[0]` gives the row, and `cell[1]` gives the column.
+
+### Understanding `cell[0]` and `cell[1]` in BFS
+
+```java
+int[] cell = {1, 1};
+int r = cell[0];
+int c = cell[1];
+```
+
+- `cell[0]` always represents the **row coordinate**.
+- `cell[1]` always represents the **column coordinate**.
+- `0` and `1` are array indexes, not the actual row or column numbers.
+- `{1, 1}` means row 1, column 1; `{0, 1}` means row 0, column 1.
+
+**Remember:** The first element stores the row, and the second stores the column. The coordinate values can change!
+
 6. **Check directions:** Explore down, up, right, and left using the `directions` array.
 7. **Calculate neighbors:** `newRow = r + dir[0]` and `newCol = c + dir[1]`.
 8. **Check boundaries:** Ensure the neighboring coordinates are inside the grid.
