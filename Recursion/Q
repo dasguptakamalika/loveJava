@@ -1,4 +1,4 @@
-package org.example;
+ package org.example;
 import java.util.*;
 import java.lang.*;
 import java.util.LinkedList;
@@ -17,5 +17,5 @@ public class Q
     q.add(30);
 //add can throw IllegalStateException , hence we have offer. much more robust
 System.out.println(q);
-  }
+  }   
 }
