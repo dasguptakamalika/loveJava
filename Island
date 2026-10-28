@@ -37,7 +37,7 @@ class Island {
     public void bfs(char[][] grid, int row, int col) {
         Queue<int[]> q = new LinkedList<>();
 
-        q.add(new int[]{row, col});
+        q.add(new int[]{row, col});    //the queue does not contain two separate items. It contains one array representing the cell at row 0, column 0.
         grid[row][col] = '0';
 
         int[][] directions = {
