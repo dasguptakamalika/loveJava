@@ -16,6 +16,7 @@ public class Q
     q.add(20);
     q.add(30);
 //add can throw IllegalStateException , hence we have offer. much more robust
+//q.add() can throw an IllegalStateException when the queue cannot accept any more elements.
 System.out.println(q);
   }   
 }
