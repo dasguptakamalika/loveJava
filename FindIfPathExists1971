@@ -31,6 +31,9 @@ public class Main {
 
         while (!q.isEmpty()) {
 
+
+
+
             int node = q.poll();
 
             if (node == destination) {
@@ -62,3 +65,12 @@ public class Main {
         System.out.println(validPath(n, edges, 0, 5));
     }
 }
+/* First for loop
+
+Create empty inner ArrayLists
+
+First loop finishes
+
+Second for-each loop
+
+Populate the inner lists with neighbors */
