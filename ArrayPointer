@@ -9,7 +9,7 @@
                 index++;
             }
         }
-
+ 
         // Step 2: fill remaining positions with 0
         while (index < nums.length) {
             nums[index] = 0; 
