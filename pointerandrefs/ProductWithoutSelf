@@ -5,7 +5,7 @@ class Solution {
         int[] result = new int[n];
 
         // Step 1: left products 
-        result[0] = 1;
+        result[0] = 1; 
         for (int i = 1; i < n; i++) {    
             result[i] = result[i - 1] * nums[i - 1];      
 //in the first (left) loop, you did NOT take products to the right of i.
