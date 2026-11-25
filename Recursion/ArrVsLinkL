@@ -1,4 +1,4 @@
-📊 ArrayList vs. LinkedList
+ 📊 ArrayList vs. LinkedList
 Choosing the right list structure depends heavily on what operations your application performs most frequently:
 Feature	ArrayList	LinkedList
 Underlying Structure	Resizable Dynamic Array	Doubly-Linked List
